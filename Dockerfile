@@ -1,4 +1,4 @@
-FROM jupyter/base-notebook:ae885c0a6226
+FROM jupyter/base-notebook:0b3ec811c968
 ARG JUPYTERHUB_VERSION=0.8
 ARG HELM_VERSION=2.6.2
 ARG TERRAFORM_VERSION=0.10.8
@@ -86,4 +86,4 @@ USER ${JUPYTER_USER}
 RUN conda install -c conda-forge --quiet --yes \
     'ruamel.yaml=0.15*'
 RUN pip install --no-cache jupyterhub==$JUPYTERHUB_VERSION \
-    kubelaunch==0.0.5
+    kubelaunch==0.0.6

@@ -32,7 +32,7 @@ class RunTests(Command):
 
 setup(
     name = 'kubelaunch',
-    version = '0.0.5',
+    version = '0.0.6',
     description = 'An opinionated AI stack built for Kubernetes by default',
     long_description = long_description,
     url = 'https://github.com/kuberlytics/kubelaunch-cli',

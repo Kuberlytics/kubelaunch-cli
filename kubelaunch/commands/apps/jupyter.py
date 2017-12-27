@@ -105,6 +105,8 @@ def jupyter_init(self):
             config['proxy']['service']['loadBalancerIP']=lc['jup_fixed_ip']
         if lc['cluster_location']=='azure':
             config['prePuller']=lc['jup_prePuller']
+            config['rbac']=lc['jup_prePuller']
+            print("RBAC set to false per https://github.com/jupyterhub/zero-to-jupyterhub-k8s/issues/344. This is a security issue. Check for updates.")
         ruamel.yaml.round_trip_dump(config, open(lc['jup_config'], 'w'))
         lc['jup_rebuild_config']=False
         ruamel.yaml.round_trip_dump(lc, open(self.launch_file, 'w'))

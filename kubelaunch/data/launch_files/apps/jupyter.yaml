@@ -37,7 +37,9 @@ jup_admin:
 jup_singleuser:
   image:
     name: jupyterhub/k8s-singleuser-sample
-    tag: v0.5.0 
+    tag: v0.5.0
 jup_prePuller:
+  enabled: false
+jup_rbac:
   enabled: false
 #End of Jupyterhub Configuration
