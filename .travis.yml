@@ -4,8 +4,11 @@ python:
   - "3.5"
   - "3.6"
 
+install:
+  - py setup.py install
+
 script:
-  - python setup.py test
+  - py setup.py test
 
 deploy:
   provider: pypi
