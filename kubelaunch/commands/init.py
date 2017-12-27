@@ -27,3 +27,4 @@ class Init(Base):
         if self.options['--jupyter']:
             print("Appending Jupyter")
             self.append_launch_file('jupyter')
+            

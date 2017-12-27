@@ -2,9 +2,11 @@
 
 import os
 from shutil import copyfile
+from .apps import jupyter
 import ruamel.yaml
 import subprocess
 from shutil import copyfile
+from .apps.jupyter import *
 
 class Base(object):
     """A base command."""
@@ -26,6 +28,9 @@ class Base(object):
             print('Adding configuration for '+app+' to launch.yaml.')
             config=self.load_yaml(app_config)
             ruamel.yaml.round_trip_dump(config, open(self.launch_file, 'a'))
+            self.launch_config=self.load_yaml(self.launch_file)
+            if app=='jupyter':
+                jupyter_init(self)
         else:
             print('The configuration for the application ', app, 'is not available.' )
         copyfile(self.notebooks_dir+'/apps/'+app+'.ipynb', self.cwd+'/'+app+'.ipynb')
