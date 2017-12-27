@@ -5,11 +5,11 @@ Kubelaunch
 .. image:: https://img.shields.io/pypi/v/hugo_jupyter.svg
         :target: https://pypi.python.org/pypi/kubelaunch
 
-.. image:: https://img.shields.io/travis/knowsuchagency/kubelaunch.svg
-        :target: https://travis-ci.org/knowsuchagency/kubelaunch
+.. image:: https://img.shields.io/travis/kuberlytics/kubelaunch-cli.svg
+        :target: https://travis-ci.org/kuberlytics/kubelaunch-cli
 
-.. image:: https://pyup.io/repos/github/knowsuchagency/kubelaunch/shield.svg
-     :target: https://pyup.io/repos/github/knowsuchagency/kubelauch/
+.. image:: https://pyup.io/repos/github/kuberlytics/kubelauch-cli/shield.svg
+     :target: https://pyup.io/repos/github/kuberlytics/kubelauch-cli/
      :alt: Updates
 
 .. image:: https://img.shields.io/github/license/mashape/apistatus.svg
