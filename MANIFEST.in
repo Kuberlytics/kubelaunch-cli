@@ -1,0 +1,13 @@
+exclude .gitignore
+exclude .DS_Store
+exclude *.sh
+include README.rst
+include setup.cfg
+prune .cache
+prune .git
+prune build
+prune dist
+recursive-exclude *.egg-info *
+recursive-include tests *
+recursive-include launch-files
+recursive-include notebooks
