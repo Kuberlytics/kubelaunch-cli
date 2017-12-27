@@ -12,8 +12,8 @@ class Base(object):
         self.options = options
         self.args = args
         self.base_dir=os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
-        self.launch_dir=self.base_dir+'/launch_files'
-        self.notebooks_dir=self.base_dir+'/notebooks'
+        self.launch_dir=self.base_dir+'/data/launch_files'
+        self.notebooks_dir=self.base_dir+'/data/notebooks'
         self.cwd=os.getcwd()
         self.launch_file = self.cwd+'/launch.yaml'
         self.launch_config = {}

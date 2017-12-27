@@ -32,10 +32,10 @@ class RunTests(Command):
 
 setup(
     name = 'kubelaunch',
-    version = '0.1.dev0',
+    version = '0.0.5',
     description = 'An opinionated AI stack built for Kubernetes by default',
     long_description = long_description,
-    url = 'https://github.com/kuberlytics/kubelaunch',
+    url = 'https://github.com/kuberlytics/kubelaunch-cli',
     author = 'Jason Kuruzovich',
     author_email = 'jkuruzovich@gmail.com',
     classifiers = [
@@ -48,6 +48,7 @@ setup(
     keywords='kubernetes analytics jupyterhub airflow',
     packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
     install_requires=['ruamel.yaml','docopt'],
+    include_package_data=True,
     extras_require = {
         'test': ['coverage', 'pytest', 'pytest-cov'],
     },

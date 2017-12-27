@@ -8,6 +8,5 @@ prune .git
 prune build
 prune dist
 recursive-exclude *.egg-info *
-recursive-include tests *
-recursive-include launch-files
-recursive-include notebooks
+recursive-exclude tests *
+recursive-include kubelaunch/data *

@@ -1,0 +1,15 @@
+cluster_location: gcp
+#Start of Google Specific Configuration
+g_project: kuberlytics             #Google project name
+g_cluster_name: kuberlytics        #Name of your Google Cluster
+g_region: us-east1                 #Selection from gcloud compute regions list.
+g_zone: us-east1-b                  #Selection from gcloud compute regions list.
+g_machine_type: n1-highmem-4        #Type of Server
+g_account: you@mail.com    #Email Associated with the account.
+g_authorization_file: auth.json     #Service account authorization file.
+g_service_account_name: kuberlytics  #Service account name.
+g_fixedip_namespace: jupyterhub-kuberlytics
+g_num_nodes: 1                      #The default number of nodes (servers)
+g_num_nodes_class: 3                #The number of nodes when class is in session.
+g_max_nodes: 4
+#End of Google Cloud Platform Configuration

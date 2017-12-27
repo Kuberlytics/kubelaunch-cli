@@ -22,7 +22,7 @@ class Init(Base):
         #Create the launch_file in the user directory
         ruamel.yaml.round_trip_dump(config, open(self.launch_file, 'w'))
         copyfile(self.notebooks_dir+'/clusters/'+cluster_location+'.ipynb', self.cwd+'/'+cluster_location+'.ipynb')
-        copyfile(self.base_dir+'/readme.md', self.cwd+'/readme.md')
+        copyfile(self.base_dir+'/data/readme.md', self.cwd+'/readme.md')
 
         if self.options['--jupyter']:
             print("Appending Jupyter")

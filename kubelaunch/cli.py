@@ -6,7 +6,6 @@ Usage:
   kubel -v | --version
   kubel init (azure|gcp) [--jupyter][--airflow][--force]
   kubel add_config <app>
-  kubel hello <command> [--dry-run]
   kubel app <app> <command> [--dry-run]
   kubel cluster <command> [--dry-run]
 

@@ -25,5 +25,5 @@ def gcp_commands(self):
     commands['delete_forwarding_rule']="gcloud compute forwarding-rules delete forwarding_rule --quiet"
     commands['delete_fixedip']="gcloud compute addresses delete "+lc['g_fixedip_namespace']+" --region="+lc['g_region']+" --quiet"
     commands['describe_cluster']="gcloud container clusters describe "+lc['g_cluster_name']
-    commands['backup_ssh']="mkdir "+self.cwd+"/.ssh &&"+ "cp ~/.ssh/id_rsa "+self.cwd+"/.ssh/id_rsa_"+lc['cluster_name']+"&& cp ~/.ssh/id_rsa.pub "+self.cwd+"/.ssh/id_rsa_"+lc['cluster_name']+".pub"
+    #commands['backup_ssh']="mkdir "+self.cwd+"/.ssh &&"+ "cp ~/.ssh/id_rsa "+self.cwd+"/.ssh/id_rsa_"+lc['cluster_name']+"&& cp ~/.ssh/id_rsa.pub "+self.cwd+"/.ssh/id_rsa_"+lc['cluster_name']+".pub"
     return commands

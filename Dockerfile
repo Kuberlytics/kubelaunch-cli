@@ -85,5 +85,5 @@ RUN mkdir /home/${JUPYTER_USER}/ket && \
 USER ${JUPYTER_USER}
 RUN conda install -c conda-forge --quiet --yes \
     'ruamel.yaml=0.15*'
-RUN pip install --no-cache jupyterhub==$JUPYTERHUB_VERSION
-
+RUN pip install --no-cache jupyterhub==$JUPYTERHUB_VERSION \
+    kubelaunch==0.0.5
